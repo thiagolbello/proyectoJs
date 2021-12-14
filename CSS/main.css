@@ -1,0 +1,134 @@
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.center {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carta {
+    border-color: #000;
+    border-width: 0.1em;
+    border-style: solid;
+    background-color: #e7ecef;
+    border-radius: 2rem;
+    margin: 3rem;
+}
+
+hr.solid {
+    border-top: 5px solid #bbb;
+    width: 50%;
+}
+
+.txtDetails {
+    display: none;
+}
+
+#aviso {
+    width: 100vw;
+}
+
+nav {
+    background-color: antiquewhite;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.3em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shiny {
+    animation: flow 5s ease-in-out infinite;
+    background: linear-gradient(-60deg, #360568, #5b2a86, #7785ac, #9ac6c5, #a5e6ba);
+    background-size: 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.favorita {
+	background: linear-gradient(-45deg, #c9184a, #ff758f, #ffb3c1, #ffccd5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+    color: black;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContenido {
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 20em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 1em;
+}
+
+.dropdown:hover .dropdownContenido {
+    display: block;
+}
+
+.dropdownContenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
